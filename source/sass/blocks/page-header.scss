@@ -20,19 +20,18 @@
 }
 
 .page-header__description {
+  position: relative;
+
   width: 268px;
   margin: 0;
   padding: 0;
-  position: relative;
 
   img {
     position: absolute;
-    bottom: 0;
     right: 58px;
+    bottom: 0;
   }
 }
-
-
 
 .page-header__basket {
   position: relative;
@@ -58,4 +57,9 @@
 
     @include pseudo();
   }
+}
+
+.page-header__main-nav {
+  min-height: 70px;
+  background-color: #e33439;
 }
