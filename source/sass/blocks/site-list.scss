@@ -1,13 +1,75 @@
 .site-list {
-  padding: 0;
-  list-style: none;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0;
+
+  list-style: none;
 }
+
+.site-list__item {
+  &:first-child {
+    margin-right: 37px;
+  }
+
+  &:nth-child(5) {
+    padding-right: 44px;
+  }
+}
+
+.site-list__item--dropdown {
+  position: relative;
+
+  min-width: 208px;
+
+  text-align: center;
+
+  .site-list__link {
+    position: relative;
+
+    padding: 28px 0 22px 0;
+
+    &::after {
+      top: 30px;
+      right: -22px;
+
+      width: 10px;
+      height: 8px;
+
+      background-image: url("../img/menu-triangle.svg");
+      background-repeat: no-repeat;
+
+      @include pseudo();
+    }
+  }
+}
+
 .site-list__link {
-  display: block;
+  position: relative;
+
+  display: inline-block;
+  padding: 28px 0 22px 0;
+
+  text-align: center;
+  color: #f9fafe;
+  text-transform: uppercase;
   text-decoration: none;
+
+  cursor: pointer;
+
+  @include font(16px, 19px, 700);
+
+  &[href]:hover,
+  &[href]:focus {
+    color: rgba(#f9fafe, 0.6);
+  }
+
+  &[href]:active {
+    color: rgba(#f9fafe, 0.3);
+  }
+}
+
+.site-list__link--active {
+  color: rgba(#f9fafe, 0.6);
 }
