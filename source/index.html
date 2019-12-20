@@ -17,47 +17,83 @@
     <include src="build/img/sprite.svg"></include>
   </div>
   <header class="page-header">
-      <div class="page-header__login-social">
-        <div class="page-header__login-social-wrapper container">
-          <ul class="page-header__log-in log-in">
-            <li class="log-in__item"><a href="#" class="log-in__link">Вход</a></li>
-            <li class="log-in__item"><a href="#" class="log-in__link">Регистрация</a></li>
-          </ul>
+    <div class="page-header__login-social">
+      <div class="page-header__login-social-wrapper container">
+        <ul class="page-header__log-in log-in">
+          <li class="log-in__item"><a href="#" class="log-in__link">Вход</a></li>
+          <li class="log-in__item"><a href="#" class="log-in__link">Регистрация</a></li>
+        </ul>
 
-          <ul class="social">
-            <li class="social__item">
-              <a href="" class="social__link social__link--fb">
-                <svg class="social__image" fill="#ffffff" width="8" height="16">
-                  <use xlink:href="#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
+        <ul class="social">
+          <li class="social__item">
+            <a href="" class="social__link social__link--fb">
+              <span class="visually-hidden">СТраница фэйсбук компании Trate</span>
+              <svg class="social__image" fill="#ffffff" width="8" height="16">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
 
-            <li class="social__item">
-              <a href="#" class="social__link social__link--vk">
-                <svg class="social__image" fill="#ffffff" width="15" height="9">
-                  <use xlink:href="#icon-vk"></use>
-                </svg>
-              </a>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk">
+              <span class="visually-hidden">Страница вконтакте компании Trate</span>
+              <svg class="social__image" fill="#ffffff" width="15" height="9">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--youtube">
+              <span class="visually-hidden">Ютуб канал компании Trate</span>
+              <svg class="social__image" width="15" height="11">
+                <use xlink:href="#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--in">
+              <span class="visually-hidden">Инстаграм компании Trate</span>
+              <svg class="social__image" width="15" height="15" fill="#000000">
+                <use xlink:href="#icon-in"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page-header__main">
+      <div class="page-header__main-info-wrapper container">
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo">
+            <picture>
+              <source type="image/webp" srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x">
+              <img class="page-header__logo-image" src="img/logo@1x.png" srcset="img/logo@2x.png 2x" width="171" height="50" alt="Логотоип компании Trate">
+            </picture>
+          </a>
+        </div>
+        <p class="page-header__description">
+          Производитель стоматологической системы имплантов <img src="img/root.png" alt="Логотип компании root" width="64" height="22">
+        </p>
+
+        <div class="page-header__callback callback">
+          <a href="" class="callback__button">Обратный звонок</a>
+          <ul class="callback__list">
+            <li class="callback__item">
+              <a href="tel:+78002002020" class="callback__link">+7 (800) 200-20-20</a>
             </li>
-            <li class="social__item">
-              <a href="#" class="social__link social__link--youtube">
-                <svg class="social__image" width="15" height="11">
-                  <use xlink:href="#icon-youtube"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link social__link--in">
-                <svg class="social__image" width="15" height="15" fill="#000000">
-                  <use xlink:href="#icon-in"></use>
-                </svg>
-              </a>
+            <li class="callback__item">
+              <a href="tel:+74994994949" class="callback__link">+7 (499) 499-49-49</a>
             </li>
           </ul>
         </div>
 
+        <a href="#" class="page-header__basket">Оформить заявку</a>
+
       </div>
+    </div>
+
+
   </header>
 
   </body>

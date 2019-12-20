@@ -3,9 +3,59 @@
 }
 
 .page-header__login-social-wrapper {
-  padding: 13px 0 10px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 13px 0 10px 0;
+}
+
+.page-header__main-info-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.page-header__description {
+  width: 268px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  img {
+    position: absolute;
+    bottom: 0;
+    right: 58px;
+  }
+}
+
+
+
+.page-header__basket {
+  position: relative;
+
+  display: inline-block;
+  padding-left: 52px;
+
+  color: #e33439;
+  text-decoration: underline;
+
+  @include font(16px, 19px, 400);
+
+  &::before {
+    top: -10px;
+    left: 0;
+
+    width: 36px;
+    height: 34px;
+
+    background-image: url("../img/basket-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include pseudo();
+  }
 }

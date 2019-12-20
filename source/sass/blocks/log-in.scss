@@ -6,14 +6,26 @@
   @include ul-reset();
 }
 
+
+
 .log-in__item {
   position: relative;
 
-  padding-right: 40px;
+  margin-right: 40px;
+
+  &::before {
+    @include pseudo();
+    right: 0;
+    left: 0;
+    top: 19px;
+    height: 1px;
+    background-color: #a6a7b1;
+  }
+
   &:nth-of-type(1) {
     &::after {
       top: 3px;
-      right: 17px;
+      right: -20px;
 
       width: 1px;
       height: 14px;

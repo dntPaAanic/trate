@@ -6,6 +6,10 @@
   @include ul-reset;
 }
 
+.social__item:not(:last-child) {
+  margin-right: 9px;
+}
+
 .social__link {
   display: flex;
   justify-content: center;
