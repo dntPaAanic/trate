@@ -1,4 +1,35 @@
 .sub-list {
-  @include ul-reset;
   position: absolute;
+  top: auto;
+  left: 0;
+  display: none;
+  
+  width: 208px;
+
+  @include ul-reset;
+}
+
+.sub-list__item {
+  text-align: left;
+
+  background-color: #c22a2e;
+
+  &:last-child {
+    padding-bottom: 17px;
+  }
+}
+
+.sub-list__link {
+  display: block;
+  padding: 11px 0 11px 36px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  @include font(16px, 16px, 400);
+
+  &:hover,
+  &:focus {
+    background-color: #e33439;
+  }
 }
