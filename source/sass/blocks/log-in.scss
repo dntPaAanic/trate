@@ -1,0 +1,43 @@
+.log-in {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @include ul-reset();
+}
+
+.log-in__item {
+  position: relative;
+
+  padding-right: 40px;
+  &:nth-of-type(1) {
+    &::after {
+      top: 3px;
+      right: 17px;
+
+      width: 1px;
+      height: 14px;
+
+      background-color: #a6a7b1;
+
+      @include pseudo();
+    }
+  }
+}
+
+.log-in__link {
+  color: #a6a7b1;
+  text-decoration: none;
+  cursor: pointer;
+
+  @include font(14px, 120%, 400);
+
+  &:hover,
+  &:focus {
+    color: rgba(#a6a7b1, 0.6);
+  }
+
+  &:active {
+    color: #898b9c;
+  }
+}

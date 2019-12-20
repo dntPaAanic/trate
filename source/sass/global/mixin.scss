@@ -1,0 +1,27 @@
+@mixin pseudo($content: "", $position: absolute, $display: block) {
+  content: $content;
+  position: $position;
+
+  display: $display;
+}
+
+@mixin ul-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin font($size: false, $height: false, $weight: false) {
+  @if $weight {
+    font-weight: $weight;
+  }
+
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $height {
+    line-height: $height;
+  }
+}
