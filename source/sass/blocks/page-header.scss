@@ -62,6 +62,24 @@
 
     @include pseudo();
   }
+
+  &:hover,
+  &:focus {
+    color: rgba(#e33439, 0.6);
+  }
+
+  &:active {
+    color: rgba(#e33439, 0.3);
+  }
+
+  &:hover::before,
+  &:focus::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .page-header__main-nav {
