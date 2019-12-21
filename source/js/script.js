@@ -19,9 +19,13 @@ var swiper1 = new Swiper('.swiper-container-1', {
 var swiper2 = new Swiper('.swiper-container-2', {
   slidesPerView: 1,
   spaceBetween: 10,
-  // init: false,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  simulateTouch: false,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination-2',
     clickable: true,
   },
   breakpoints: {
@@ -39,7 +43,7 @@ var swiper2 = new Swiper('.swiper-container-2', {
     },
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next-2',
+    prevEl: '.swiper-button-prev-2',
   },
 });
