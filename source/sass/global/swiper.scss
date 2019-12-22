@@ -21,7 +21,9 @@
   --swiper-theme-color: #e33439;
 }
 .swiper-container,
-.swiper-container-2 {
+.swiper-container-2,
+.swiper-container-3,
+.swiper-container-4 {
   position: relative;
   /* Fix of Webkit flickering */
   z-index: 1;
