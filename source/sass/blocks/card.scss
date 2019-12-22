@@ -10,96 +10,6 @@
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
 }
 
-.card--large-half {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 578px;
-
-  .card__title {
-    margin: 0 0 34px 0;
-
-    color: #0d0d14;
-
-    @include font (38px, 140%, 400);
-  }
-
-  .card__image-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 189px;
-    height: 578px;
-    padding: 60px 0 60px 7px;
-  }
-
-  .card__description-wrapper {
-    position: relative;
-    z-index: 1;
-
-    display: flex;
-    flex-direction: column;
-    width: 173px;
-    margin-right: 10px;
-    padding: 60px 0 60px 0;
-  }
-
-  .card__description-1 {
-    margin: 0 0 23px 0;
-  }
-
-  .card__description-2 {
-    margin: 0 0 41px 0;
-  }
-
-  .card__link {
-    position: absolute;
-    top: 229px;
-    right: 13px;
-
-    color: #e33439;
-
-    @include font(14px, 140%, 400);
-  }
-
-  .card__button {
-    order: 1;
-    margin: 0;
-    width: 145px;
-    padding: 10px 8px 10px 55px;
-
-    @include font(14px, 120%, 400);
-
-    &:hover ~ * {
-      color: #ffffff;
-    }
-
-    &:hover::after {
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: -1;
-
-      background-color: #e33439;
-
-      pointer-events: none;
-
-      @include pseudo();
-    }
-  }
-}
-
-//.card__description-wrapper {
-//  position: absolute;
-//  top: 0;
-//  right: 0;
-//
-//  width: 216px;
-//
-//  background-color: rgba(#ffffff, 0.9);
-//}
-
 .card__title {
   margin: 0;
 
@@ -129,5 +39,183 @@
 }
 
 .card__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 145px;
+  margin: 0;
+  padding: 6px 8px 6px 16px;
+
+  @include font(14px, 120%, 400);
+
+  span {
+    margin-right: 14px;
+  }
+
+  &:hover {
+    color: #ffffff;
+
+    border-color: #ffffff;
+    .card__button-image {
+      fill: #ffffff;
+    }
+  }
+}
+
+.card__button-image {
+  width: 22px;
+  height: 19px;
+}
+
+.card--large-half {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 578px;
+
+  .card__title {
+    margin: 0 0 14px 0;
+    padding-bottom: 20px;
+
+    color: #0d0d14;
+
+    border-bottom: 1px solid rgba(#606276, 0.2);
+
+    @include font (38px, 140%, 400);
+  }
+
+  .card__image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 189px;
+    height: 578px;
+    padding: 60px 0 60px 7px;
+  }
+
+  .card__description-wrapper {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    width: 216px;
+    padding: 60px 23px 60px 31px;
+  }
+
+  .card__description-1 {
+    margin: 0 0 23px 0;
+    padding-right: 13px;
+  }
+
+  .card__description-2 {
+    margin: 0 0 41px 0;
+    padding-right: 13px;
+  }
+
+  .card__link {
+    position: absolute;
+    top: 229px;
+    right: 25px;
+
+    color: #e33439;
+
+    @include font(14px, 140%, 400);
+  }
+
+  .card__button {
+    order: 1;
+
+    &:hover ~ * {
+      color: #ffffff;
+    }
+
+    &:hover::after {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+
+      background-color: #e33439;
+
+      pointer-events: none;
+
+      @include pseudo();
+    }
+  }
+}
+
+.card--half {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 280px;
+
+  .card__image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 189px;
+    height: 100%;
+    padding: 60px 0 60px 0;
+  }
+
+  .card__title {
+    margin: 0 0 17px 0;
+    padding-bottom: 12px;
+
+    color: #0d0d14;
+
+    border-bottom: 1px solid rgba(#606276, 0.2);
+  }
+
+  .card__description-wrapper {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    width: 216px;
+    padding: 27px 26px 30px 26px;
+  }
+
+  .card__description-1 {
+    margin: 0 0 23px 0;
+  }
+
+  .card__description-2 {
+    margin: 0 0 23px 0;
+  }
+
+  .card__link {
+    position: absolute;
+    top: 168px;
+    right: 29px;
+
+    color: #e33439;
+
+    @include font(14px, 140%, 400);
+  }
+
+  .card__button {
+    order: 1;
+    &:hover ~ * {
+      color: #ffffff;
+    }
+
+    &:hover::after {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+
+      background-color: #e33439;
+
+      pointer-events: none;
+
+      @include pseudo();
+    }
+  }
 }
