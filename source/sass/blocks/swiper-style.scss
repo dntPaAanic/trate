@@ -1,0 +1,38 @@
+.swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  left: 11%;
+  bottom: 56px;
+}
+
+.swiper-button-next-1 {
+  display: none;
+}
+
+.swiper-button-prev-1 {
+  display: none;
+}
+
+@media (min-width: 1437px) {
+  .swiper-button-next-1 {
+    display: block;
+    right: 5%;
+
+    color: #e33439;
+  }
+
+  .swiper-button-prev-1 {
+    display: block;
+    left: 5%;
+
+    color: #e33439;
+  }
+}
+
+.swiper-container-2 {
+  width: $desktop-width;
+  height: 580px;
+}
