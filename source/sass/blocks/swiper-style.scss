@@ -17,7 +17,11 @@
 }
 
 .swiper-button-next-2,
-.swiper-button-prev-2 {
+.swiper-button-prev-2,
+.swiper-button-next-3,
+.swiper-button-prev-3,
+.swiper-button-next-4,
+.swiper-button-prev-4 {
   display: none;
 }
 
@@ -33,7 +37,11 @@
 
 @media (min-width: 1437px) {
   .swiper-button-next-2,
-  .swiper-button-prev-2 {
+  .swiper-button-prev-2,
+  .swiper-button-next-3,
+  .swiper-button-prev-3,
+  .swiper-button-next-4,
+  .swiper-button-prev-4 {
     display: block;
 
     .product-card__arrow {
@@ -56,6 +64,16 @@
   .swiper-button-next-2 {
     right: -101px;
     top: 51%;
+  }
+
+  .swiper-button-prev-3 {
+    left: -100px;
+    top: 63%;
+  }
+
+  .swiper-button-next-3 {
+    right: -106px;
+    top: 63%;
   }
 
   .swiper-button-next-1 {
