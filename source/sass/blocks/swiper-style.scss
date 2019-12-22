@@ -26,6 +26,11 @@
   height: 580px;
 }
 
+.swiper-container-3 {
+  width: $desktop-width;
+  height: 233px;
+}
+
 @media (min-width: 1437px) {
   .swiper-button-next-2,
   .swiper-button-prev-2 {
