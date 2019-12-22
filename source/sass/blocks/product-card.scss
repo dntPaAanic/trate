@@ -4,6 +4,10 @@
   background-color: #f0f0f0;
 }
 
+.product-card__wrapper {
+  position: relative;
+}
+
 .product-card__category {
   display: flex;
   flex-direction: row;
@@ -60,4 +64,9 @@
   &::after {
     display: none;
   }
+}
+
+.product-card__arrow {
+  width: 21px;
+  height: 36px;
 }

@@ -152,7 +152,9 @@
   */
 }
 .swiper-button-prev,
-.swiper-button-next {
+.swiper-button-next,
+.swiper-button-prev-2,
+.swiper-button-next-2{
   position: absolute;
   top: 50%;
   z-index: 10;
@@ -176,7 +178,10 @@
   pointer-events: none;
 }
 .swiper-button-prev:after,
-.swiper-button-next:after {
+.swiper-button-next:after,
+//.swiper-button-prev-2:after,
+//.swiper-button-next-2:after
+  {
   font-variant: initial;
   font-size: var(--swiper-navigation-size);
   font-family: swiper-icons;
@@ -185,22 +190,43 @@
   letter-spacing: 0;
 }
 .swiper-button-prev,
-.swiper-container-rtl .swiper-button-next {
+.swiper-button-prev-2,
+.swiper-container-rtl .swiper-button-next,
+.swiper-container-rtl .swiper-button-next-2{
   right: auto;
   left: 10px;
 }
+.swiper-button-prev-2 {
+  display: block;
+}
 .swiper-button-prev:after,
-.swiper-container-rtl .swiper-button-next:after {
+.swiper-container-rtl .swiper-button-next:after,
+.swiper-button-prev-2:after,
+.swiper-container-rtl .swiper-button-next-2:after{
   content: "prev";
 }
+.swiper-button-prev-2:after,
+.swiper-container-rtl .swiper-button-next-2:after{
+  content: "prev";
+  font-size: 0;
+}
 .swiper-button-next,
-.swiper-container-rtl .swiper-button-prev {
+.swiper-container-rtl .swiper-button-prev,
+.swiper-button-next-2,
+.swiper-container-rtl .swiper-button-prev-2{
   right: 10px;
   left: auto;
 }
 .swiper-button-next:after,
-.swiper-container-rtl .swiper-button-prev:after {
+.swiper-container-rtl .swiper-button-prev:after,
+.swiper-button-next-2:after,
+.swiper-container-rtl .swiper-button-prev-2:after {
   content: "next";
+}
+.swiper-button-next-2:after,
+.swiper-container-rtl .swiper-button-prev-2:after {
+  content: "next";
+  font-size: 0;
 }
 .swiper-button-prev.swiper-button-white,
 .swiper-button-next.swiper-button-white {
@@ -228,6 +254,14 @@
   transform: translate3d(0, 0, 0);
 
   transition: 300ms opacity;
+}
+.swiper-pagination-2 {
+  position: relative;
+  margin-top: 51px;
+  margin-left: 85px;
+  .swiper-pagination-bullet {
+    margin: 0 4px;
+  }
 }
 .swiper-pagination.swiper-pagination-hidden,
 .swiper-pagination-2.swiper-pagination-hidden {
