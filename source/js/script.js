@@ -20,9 +20,9 @@ var swiper2 = new Swiper('.swiper-container-2', {
   slidesPerView: 1,
   spaceBetween: 10,
   loop: true,
-  autoplay: {
-    delay: 5000,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  // },
   simulateTouch: false,
   pagination: {
     el: '.swiper-pagination-2',
