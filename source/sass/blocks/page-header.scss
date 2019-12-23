@@ -84,5 +84,17 @@
 
 .page-header__main-nav {
   min-height: 70px;
+
   background-color: #e33439;
+}
+
+@media (min-width: 0) and (max-width: $tablet-width - 1) {
+  .page-header__main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .page-header__main-nav {
+    min-height: 45px;
+  }
 }
