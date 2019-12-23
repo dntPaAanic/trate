@@ -79,6 +79,7 @@ var swiper3 = new Swiper('.swiper-container-3', {
 var swiper4 = new Swiper('.swiper-container-4', {
   slidesPerView: 1,
   spaceBetween: 10,
+  loop: true,
   // init: false,
   navigation: {
     nextEl: '.swiper-button-next-4',
