@@ -35,6 +35,11 @@
   height: 233px;
 }
 
+.swiper-container-4 {
+  width: $desktop-width;
+  height: 395px;
+}
+
 @media (min-width: 1437px) {
   .swiper-button-next-2,
   .swiper-button-prev-2,
@@ -74,6 +79,16 @@
   .swiper-button-next-3 {
     right: -106px;
     top: 63%;
+  }
+
+  .swiper-button-prev-4 {
+    left: -100px;
+    top: 56%;
+  }
+
+  .swiper-button-next-4 {
+    right: -106px;
+    top: 56%;
   }
 
   .swiper-button-next-1 {

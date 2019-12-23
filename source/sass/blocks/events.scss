@@ -34,6 +34,16 @@
   background-image: url("../img/events-2@1x.jpg");
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .events__item--1 {
+    background-image: url("../img/events-1@2x.jpg");
+  }
+
+  .events__item--2 {
+    background-image: url("../img/events-2@2x.jpg");
+  }
+}
+
 .events__content-wrapper {
   position: absolute;
   top: 0;
@@ -77,10 +87,12 @@
 
   &:hover,
   &:focus {
-    color: rgba(#323232, 0.6);
+    color: rgba(#e33439, 1);
+    text-decoration: underline;
   }
 
   &:active {
-    color: rgba(#323232, 0.3);
+    color: rgba(#e33439, 0.3);
+    text-decoration: underline;
   }
 }
