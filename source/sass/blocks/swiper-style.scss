@@ -124,3 +124,11 @@
   }
 }
 
+@media (min-width: 0) and (max-width: $tablet-width - 1) {
+  .swiper-container-2,
+  .swiper-container-3,
+  .swiper-container-4 {
+    width: $mobile-width;
+  }
+}
+

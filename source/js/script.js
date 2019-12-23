@@ -29,12 +29,12 @@ var swiper2 = new Swiper('.swiper-container-2', {
     clickable: true,
   },
   breakpoints: {
-    640: {
-      slidesPerView: 2,
+    0: {
+      slidesPerView: 1,
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 4,
+      slidesPerView: 2,
       spaceBetween: 40,
     },
     1280: {
@@ -57,12 +57,12 @@ var swiper3 = new Swiper('.swiper-container-3', {
   },
   simulateTouch: false,
   breakpoints: {
-    640: {
-      slidesPerView: 2,
+    0: {
+      slidesPerView: 1,
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 4,
+      slidesPerView: 2,
       spaceBetween: 40,
     },
     1280: {
@@ -80,21 +80,20 @@ var swiper4 = new Swiper('.swiper-container-4', {
   slidesPerView: 1,
   spaceBetween: 10,
   loop: true,
-  // init: false,
+  autoplay: {
+    delay: 4000,
+  },
   navigation: {
     nextEl: '.swiper-button-next-4',
     prevEl: '.swiper-button-prev-4',
   },
-  autoplay: {
-    delay: 4000,
-  },
   breakpoints: {
-    640: {
-      slidesPerView: 2,
+    0: {
+      slidesPerView: 1,
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 4,
+      slidesPerView: 2,
       spaceBetween: 40,
     },
     1280: {
