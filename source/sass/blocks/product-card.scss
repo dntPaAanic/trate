@@ -45,12 +45,12 @@
     @include pseudo();
   }
 
-  &:hover,
+  &[href]:hover,
   &:focus {
     opacity: 0.6;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.3;
   }
 }

@@ -1,0 +1,96 @@
+.about-us {
+  padding: 52px 0;
+
+  background-color: #ffffff;
+}
+
+.about-us__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-us__title {
+  margin: 0 0 63px 0;
+
+  text-align: center;
+  color: #0d0d14;
+
+  @include font(38px, 120%, 400);
+}
+
+.about-us__video {
+  margin-top: 8px;
+  margin-right: 50px;
+}
+
+.about-us__benefits-list {
+  width: 430px;
+
+  @include ul-reset;
+}
+
+.about-us__benefits-link {
+  color: #323232;
+  text-decoration: none;
+
+  @include font(24px, 130%, 400);
+
+  &:hover,
+  &:focus {
+    color: rgba(#323232, 0.6);
+  }
+
+  &:active {
+    color: rgba(#323232, 0.3);
+  }
+}
+
+.about-us__benefits-link--active {
+  color: #e33439;
+
+  &:hover,
+  &:focus {
+    color: rgba(#e33439, 1);
+  }
+
+  &:active {
+    color: rgba(#e33439, 1);
+  }
+}
+
+.about-us__overview-wrapper {
+  width: 406px;
+
+  @include font(16px, 120%, 400);
+}
+
+.about-us__overview-desc {
+  margin: 0 0 12px 0;
+  padding: 0;
+}
+
+.about-us__overview-list {
+  @include ul-reset;
+}
+
+.about-us__overview-item {
+  position: relative;
+
+  padding: 0 0 0 42px;
+  margin-bottom: 3px;
+
+  &::before {
+    top: 6px;
+    left: 11px;
+
+    width: 7px;
+    height: 7px;
+
+    background-color: #e33439;
+    border-radius: 50px;
+
+    @include pseudo();
+  }
+}
