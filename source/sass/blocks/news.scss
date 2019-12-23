@@ -9,9 +9,11 @@
 }
 
 .news__title {
-  @include font(38px, 120%, 400);
-  text-align: center;
   margin: 0 0 42px 0;
+
+  text-align: center;
+
+  @include font(38px, 120%, 400);
 }
 
 .news__item {
@@ -69,8 +71,9 @@
 }
 
 .news__item-description {
-  color: #323232;
   margin: 0;
+
+  color: #323232;
 
   @include font(14px, 140%, 400);
 }

@@ -21,7 +21,7 @@ var swiper2 = new Swiper('.swiper-container-2', {
   spaceBetween: 10,
   loop: true,
   autoplay: {
-    delay: 5000,
+    delay: 7000,
   },
   simulateTouch: false,
   pagination: {
@@ -53,7 +53,7 @@ var swiper3 = new Swiper('.swiper-container-3', {
   spaceBetween: 10,
   loop: true,
   autoplay: {
-    delay: 5000,
+    delay: 6000,
   },
   simulateTouch: false,
   breakpoints: {
@@ -83,6 +83,9 @@ var swiper4 = new Swiper('.swiper-container-4', {
   navigation: {
     nextEl: '.swiper-button-next-4',
     prevEl: '.swiper-button-prev-4',
+  },
+  autoplay: {
+    delay: 4000,
   },
   breakpoints: {
     640: {
