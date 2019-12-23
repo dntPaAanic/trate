@@ -53,3 +53,11 @@
     color: #898b9c;
   }
 }
+
+@media (min-width: 0) and (max-width: $tablet-width - 1) {
+  .log-in__item {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

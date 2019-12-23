@@ -24,6 +24,7 @@
 .page-footer__image {
   margin-bottom: 22px;
 }
+
 .page-footer__image-2 {
   margin-left: -9px;
 }
@@ -70,7 +71,7 @@
   margin: 0 0 14px 0;
 }
 
-.page-footer__callback-link {
+.page-footer__callback-item {
   @include font(22px, 26px, 700);
   color: #ffffff;
 }
@@ -84,6 +85,7 @@
   color: #ffffff;
   margin-bottom: 24px;
   margin-right: 0;
+  margin-left: 10px;
 
   &:hover,
   &:focus {
@@ -97,4 +99,28 @@
 
 .page-footer__social {
   justify-content: flex-end;
+}
+
+@media (min-width: 0) and (max-width: $tablet-width - 1) {
+  .page-header__login-social-wrapper {
+    justify-content: center;
+  }
+
+  .page-header__social {
+    display: none;
+  }
+
+  .page-header__main-info-wrapper {
+    padding-top: 10px;
+    justify-content: center;
+  }
+
+  .page-header__description {
+    margin: 10px 0;
+  }
+
+  .page-header__callback {
+    justify-content: center;
+  }
+
 }

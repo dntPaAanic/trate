@@ -33,3 +33,25 @@
     background-color: #e33439;
   }
 }
+
+@media (min-width: 0) and (max-width: $tablet-width - 1) {
+  .sub-list {
+    display: block;
+    position: relative;
+  }
+
+  .sub-list__item {
+    background-color: #e33439;
+  }
+
+  .sub-list__link {
+    &:hover,
+    &:focus {
+      color: rgba(#ffffff, 0.6);
+    }
+
+    &:active {
+      color: rgba(#ffffff, 0.3);
+    }
+  }
+}
