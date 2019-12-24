@@ -97,3 +97,9 @@
     text-decoration: underline;
   }
 }
+
+@media (min-width: 0) and (max-width: $tablet-width - 1) {
+  .events__item {
+    width: 320px;
+  }
+}

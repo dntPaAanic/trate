@@ -77,3 +77,13 @@
 
   @include font(14px, 140%, 400);
 }
+
+@media (min-width: 0) and (max-width: $tablet-width - 1) {
+  .news__item {
+    width: $mobile-width;
+  }
+
+  .news__item-image-wrapper {
+    width: 295px;
+  }
+}

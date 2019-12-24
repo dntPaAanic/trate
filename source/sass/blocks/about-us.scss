@@ -94,3 +94,28 @@
     @include pseudo();
   }
 }
+
+@media (min-width: 0) and (max-width: $tablet-width - 1) {
+  .about-us__video {
+    video {
+      width: $mobile-width;
+    }
+  }
+
+  .about-us__overview-wrapper {
+    width: $mobile-width;
+  }
+
+  .about-us__overview-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us__benefits-list {
+    width: $mobile-width;
+  }
+
+  .about-us__benefits-link {
+    @include font(16px, 120%, 400);
+  }
+}
