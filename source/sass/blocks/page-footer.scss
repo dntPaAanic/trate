@@ -122,6 +122,14 @@
   .page-footer__social {
     justify-content: center;
   }
+}
 
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  .page-footer__column {
+    width: 135px;
 
+    &:last-child {
+      display: none;
+    }
+  }
 }
