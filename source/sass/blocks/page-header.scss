@@ -89,6 +89,10 @@
 }
 
 @media (min-width: 0) and (max-width: $tablet-width - 1) {
+  .page-header__wrapper {
+    background-color: #e33439;
+  }
+
   .page-header__main {
     display: flex;
     flex-direction: column-reverse;
