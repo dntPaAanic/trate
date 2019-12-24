@@ -31,11 +31,11 @@ var swiper2 = new Swiper('.swiper-container-2', {
   breakpoints: {
     0: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 0,
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 15,
     },
     1280: {
       slidesPerView: 3,
@@ -59,11 +59,11 @@ var swiper3 = new Swiper('.swiper-container-3', {
   breakpoints: {
     0: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 0,
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 15,
     },
     1280: {
       slidesPerView: 2,
@@ -90,11 +90,11 @@ var swiper4 = new Swiper('.swiper-container-4', {
   breakpoints: {
     0: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 0,
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 0,
     },
     1280: {
       slidesPerView: 3,

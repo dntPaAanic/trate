@@ -152,3 +152,26 @@
     color: #f9fafe;
   }
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  .site-list__item {
+    &:first-child {
+      margin: 0;
+    }
+
+    &:nth-child(5) {
+      padding: 0;
+    }
+  }
+
+  .site-list__item--dropdown {
+    width: 143px;
+
+    .site-list__link {
+      &::after {
+        right: -15px;
+      }
+    }
+  }
+
+}

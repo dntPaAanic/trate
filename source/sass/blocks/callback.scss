@@ -42,3 +42,9 @@
     margin: 0;
   }
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  .callback__list {
+    margin: 0 27px 0 0;
+  }
+}

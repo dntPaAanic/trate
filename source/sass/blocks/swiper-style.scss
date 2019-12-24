@@ -132,3 +132,11 @@
   }
 }
 
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  .swiper-container-2,
+  .swiper-container-3,
+  .swiper-container-4 {
+    width: $tablet-width;
+  }
+}
+

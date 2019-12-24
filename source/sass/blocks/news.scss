@@ -87,3 +87,13 @@
     width: 295px;
   }
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  .news__item {
+    width: $mobile-width;
+  }
+
+  .news__item-image-wrapper {
+    width: 295px;
+  }
+}
